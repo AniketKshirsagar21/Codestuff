@@ -5,109 +5,437 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CodeStuff</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylefooter.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" type="x-icon" href="images/icon7.png">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 </head>
 
-<body>
+<body onload="initClock()">
+
+
+
+
+    <!-- //nav -->
+
+
+    <section id="secNav">
+
+    
+    <nav class="navbar nvback " id="nvbar" ">
+       
+            <!-- <div class=" container-fluid"> -->
+
+        
+            <img src="images/icon7.png" alt="" class="webicon ">
+  
+            <div class="btn-group">
+            <button type="button" class="  secBtn dropdown-toggle " data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Helpfull Websites
+            </button>
+            <ul class="dropdown-menu navbtn">
+                <li><a class="dropdown-item" href="https://www.geeksforgeeks.org/" target="_blank">GeeksForGeeks</a>
+                </li>
+                <li><a class="dropdown-item" href="https://cp-algorithms.com/" target="_blank">CP-Algorithms</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+        </div>
+
+
+            <div class="btn-group">
+      
+            <button type="button" class=" secBtn dropdown-toggle " data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Coding Websites
+            </button>
+            <ul class="dropdown-menu ">
+                <li><a class="dropdown-item" target="_blanck" href="https://codeforces.com/problemset">Codeforces</a></li>
+                <li><a class="dropdown-item"  target="_blanck"  href="https://www.hackerearth.com/practice/">Hackerearth</a></li>
+                <li><a class="dropdown-item"   target="_blanck" href="https://www.codechef.com/">Codechef</a></li>
+                <li><a class="dropdown-item"  target="_blanck"  href="https://www.hackerrank.com/dashboard">Hackerrank</a></li>
+                <li><a class="dropdown-item"  target="_blanck"  href="https://atcoder.jp/">Atcoder</a></li>
+                <li><a class="dropdown-item"  target="_blanck"  href="https://leetcode.com/problemset/all/">Leetcode</a></li>
+                <li><a class="dropdown-item" target="_blanck"   href="https://www.interviewbit.com/">Interview Bit</a></li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Separated link</a></li>
+            </ul>
+       </div>
+
+        <a href="#sec1" class=" secBtn secBtn2" type="button">
+            Accounts
+        </a>
+
+
+        <a href="#sec2" class="  secBtn secBtn2 ">
+            Notes
+        </a>
+
+        <a href="#sec3" class=" secBtn secBtn2">
+            Questions
+        </a>
+        <!-- <a  style="color: rgb(236, 147, 147);"> sec3</a> -->
+
+<a>   
+    <form class="d-flex" action="https://www.google.com/search">
+        <input class="form-control me-2 " type="text" name="q" placeholder="Google Search" aria-label="Search" style="border: solid; background-color: rgb(204, 202, 202);
+        
+        ">
+        <input class="btn btn-success" type="submit" value="Google Search">
+    </form>
+        </a>
+        <!-- </div> -->
+
+        <button type="button" class=" btn btn-danger " id="changeTheme" >
+        Change theme
+    </button>
+    </nav>
+
+</section>
+
+
     <div class="backgroundd backgroundd2 ">
 
+        <div class="cont">
+            <div class="row">
+                <div class="col gridCol gridCol1" style="width: auto;">
+                    <p style="
+                    text-align: center;">
+                        <br>
+                        <button class="  addaccbtn" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                            Add New Account
+                        </button>
+                    </p>
 
-        <nav class="navbar navbar-light" id="nvbar"   ">
-       
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#"  id="nvbar1">
-                        Home                        
-                    </a>
-                    <a class="navbar-brand" href="#"  id="nvbar2">
-                        Menu                        
-                    </a>
-                    <a class="navbar-brand" href="#"  id="nvbar3">
-                        Important                        
-                    </a>
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                        
-                    </form>
-                    <a class="navbar-brand" href="#">
-                        <!-- <img  src="sun.jpg" alt="" width="30" height="30" id="icon" <a class="navbar-brand" href="#"> -->
-                            <button id="icon">Change Theme</button>
-                                                 
-                        </a> 
-                        
-                    </a>
-                </div>
-         
-            
-        </nav>
+                    <section id="sec1">
 
-
-        <div class="container" style="  align-items: center;">
-
-            <div class="mainCard" style=" width: auto;">
-                <div class=" my-5 mx-20 main-card" style="width: 18rem;">
-
-                    <div class="card-body ">
-                        <div class="mb-3">
-                            <!-- <label for="exampleFormControlInput1" class="form-label">Title </label> -->
-                            <h5 style="    color: orange;
-                            background-color: black;
-                            display: inline-block;
-                            font-size: 1.2rem;
-                            border-radius: 18px;
-                            padding: 5px 15px;
-    font-family: saa;
-                            "> Title </h5>
-                            <input type="email" class="form-control" id="addTitle" placeholder="">
+                        <div class="collapse" id="collapseExample">
+                            <div class="card card-body">
+                                <div class="mainCard"
+                                    style=" width: auto;  height: auto; padding: 0px; background-color: rgb(255, 255, 255); ">
+                                    <div class=" my-5 mx-20 main-card" style="width: auto;">
+                                        <div class="card-body ">
+                                            <div class="mb-3">
+                                                <h5 style="    color: orange;
+                                                            background-color: black;
+                                                            display: inline-block;
+                                                            font-size: 1.2rem;
+                                                            border-radius: 18px;
+                                                            padding: 5px 15px;
+                                                            font-family: saa;
+                                    "> Account Name </h5>
+                                                <input type="email" class="form-control" id="addTitle" placeholder="">
+                                            </div>
+                                            <h5 style="    color: orange;
+                                                        background-color: black;
+                                                        display: inline-block;
+                                                        font-size: 1.2rem;
+                                                        border-radius: 18px;
+                                                        padding: 5px 15px;
+                                                        font-family: saa;
+                                    "> Link </h5>
+                                            <div class="mb-3">
+                                                <textarea class="form-control text_Area" id="addText"
+                                                    rows="2"></textarea>
+                                            </div>
+                                            <!-- <div class="mb-3">
+                                            <textarea class="form-control" id="addText2" rows="1"></textarea>
+                                        </div> -->
+                                            <button href="#" class="btn-primary ab" id="addBtn"
+                                                style=" padding: 3px 14px; background-color: black; ">Add</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="mb-3">
-                            <textarea class="form-control" id="addText" rows="3"></textarea>
+
+
+                    </section>
+
+                    <hr>
+                    <div style="margin: auto; text-align: center; color: white;">
+                        Your Accounts
+                    </div>
+                    <hr>
+
+
+                    <div id="linkdiv">
+                        <div class="accLinks">
+                            <a href="${element.text}" class="linksall padd"> ${element.title} </a>
+
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Dropdown button
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li>
+                                        <button id="${index}" class="deleteBtn padd"
+                                            onclick="deleteNote(this.id)">Delete</button>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <button href="#" class="btn-primary " id="addBtn"
-                            style=" padding: 3px 14px; background-color: black; ">Add</button>
                     </div>
                 </div>
 
-            </div>
 
-            <hr>
-            <h1 id="heading">Your Notes </h1>
-            <hr>
+                <!-- Column 2nd -->
 
+                <div class="col gridCol gridCol2" style="min-height: 1000px;">
+                    <br>
 
-
-            <div id="notes" class="row container-fluid">
-                <!-- add it by javascript -->
-
-                <div class="card my-5 mx-5" style="width: 18rem;">
-                    <div class="card-body">
-                        <h5 class="card-title"> Note No</h5>
-                        <div class="mb-3">
-                            <label for="exampleFormControlTextarea1" class="form-label">My Note</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <div class="datetime">
+                        <div class="date">
+                            <span id="month">Month</span>
+                            <span id="daynum">00</span>,
+                            <span id="year">Year</span>
+                            <br>
+                            <span id="dayname">Day</span>,
                         </div>
-                        <a href="#" class="btn btn-primary addBtn">Delete</a>
+                        <div class="time">
+                            <span id="hour">00</span>:
+                            <span id="minutes">00</span>:
+                            <span id="seconds">00</span>
+                            <span id="period">AM</span>
+                        </div>
+                    </div>
+
+                    <br>
+                    <p style="
+                    text-align: center;">
+
+                        <button class=" addaccbtn" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
+                            Add New Note
+                        </button>
+                    </p>
+                    <section id="sec2">
+
+
+                        <div class="collapse" id="collapseExample2" style=" margin: 0px;">
+                            <div class="card card-body">
+                                <div class="mainCard"
+                                    style=" width: auto;   margin: 0px;  background-color: rgb(255, 255, 255); ">
+                                    <div class=" my-5 mx-20 main-card" style="width: auto;">
+                                        <div class="card-body ">
+                                            <div class="mb-3">
+                                                <h5 style="    color: orange;
+                                                            background-color: black;
+                                                            display: inline-block;
+                                                            font-size: 1.2rem;
+                                                            border-radius: 18px;
+                                                            padding: 5px 15px;
+                                                            font-family: saa;
+                                    "> Note Title </h5>
+                                                <input type="email" class="form-control" id="addTitle2" placeholder="">
+                                            </div>
+                                            <h5 style="    color: orange;
+                                                        background-color: black;
+                                                        display: inline-block;
+                                                        font-size: 1.2rem;
+                                                        border-radius: 18px;
+                                                        padding: 5px 15px;
+                                                        font-family: saa;
+                                    "> Note </h5>
+                                            <div class="mb-3">
+                                                <textarea class="form-control" id="addText2" rows="1"></textarea>
+                                            </div>
+                                            <button href="#" class="btn-primary ab " id="addBtn2"
+                                                style=" padding: 3px 14px; background-color: black; ">Add</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <hr>
+
+                    <div style="margin: auto; text-align: center; color: white;">
+                        Your Notes
+                    </div>
+                    <hr>
+                    <div id="notes2" class="row container-fluid">
+                        <!-- add it by javascript -->
+
+                        <!-- <div class="card my-5 mx-5" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title"> Note No ${index+1}</h5>
+                                <div class="mb-3">
+                                    <label for="exampleFormControlTextarea1" class="form-label">My Note</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                </div>
+                                <a href="#" class="btn btn-primary addBtn">Delete</a>
+                            </div>
+                        </div>       
+                        <div class="seco">       
+                     </div> -->
+                    </div>
+                    <hr>
+                </div>
+
+
+                <!-- Column 3rd -->
+
+                <div class="col gridCol gridCol3">
+
+                    <!-- <button type="button" class="btn btn-primary contestlink " > -->
+
+                        <a href="https://clist.by/" target="_blank" class="contestLink2 contestlink secBtn" >
+                           <strong> See all Running Contests</strong>  </a>
+                 
+                 
+
+
+                            
+                    <!-- </button> -->
+
+
+
+
+                    <p style="
+                        text-align: center;">
+                    </p>
+                    <br>
+
+                    <section id="sec3">
+                        <button class=" addaccbtn" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">
+                            Add New Question
+                        </button>
+                        </p>
+
+
+                        <div class="collapse" id="collapseExample3">
+                            <div class="card card-body">
+                                <div class="mainCard" style=" width: auto;   background-color: rgb(255, 255, 255); ">
+                                    <div class=" my-5 mx-20 main-card" style="width: auto;">
+                                        <div class="card-body ">
+                                            <div class="mb-3">
+                                                <h5 style="    color: orange;
+                                                            background-color: black;
+                                                            display: inline-block;
+                                                            font-size: 1.2rem;
+                                                            border-radius: 18px;
+                                                            padding: 5px 15px;
+                                                            font-family: saa;
+                                                            "> Question Title </h5>
+                                                <input type="email" class="form-control" id="addTitle3" placeholder="">
+                                            </div>
+                                            <h5 style="    color: orange;
+                                                        background-color: black;
+                                                        display: inline-block;
+                                                        font-size: 1.2rem;
+                                                        border-radius: 18px;
+                                                        padding: 5px 15px;
+                                                        font-family: saa;
+                                                        ">Question Link </h5>
+                                            <div class="mb-3">
+                                                <textarea class="form-control" id="addText3" rows="1"></textarea>
+                                            </div>
+                                            <button href="#" class="btn-primary ab" id="addBtn3"
+                                                style=" padding: 3px 14px; background-color: black; ">Add</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </section>
+
+                    <hr>
+                    <div style="margin: auto; text-align: center; color: white;">
+                        Your Questions
+                    </div>
+                    <hr>
+
+                    <div id="quelink">
+                        <!-- <div class="accLinks">
+                            <a href="${element.text}" class="linksall padd"> ${element.title} </a>
+
+
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Dropdown button
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li>
+                                        <button id="${index}" class="deleteBtn padd"
+                                            onclick="deleteNote(this.id)">Delete</button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div> -->
+
+
                     </div>
                 </div>
-
-                <div class="seco">
-
-
-                </div>
             </div>
-
         </div>
-    </div>
+
+        <!-- delete all btn -->
+        <div class="delbtnlast">
+            <a href="#" class="btn btn-danger" id="delall">Delete All Data</a>
+            
+            <br>
+            <h7 id="youcannot">You cannot retrieve it!</h7>
+            <br>
+            <br>
+
+            <a href="#secNav" class=" secBtn" type="button">
+                Go Up
+            </a>
+            <br>
+        </div>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
-        crossorigin="anonymous"></script>
+        <!-- FOOTER  -->
+        <footer class="footer">
+            <div class="container2">
+                <div class="suggestion ">
 
-    <script src="javascript.js"></script>
+                    <h4 class="line  ">if you have any suggestions regarding this website, please Contact me
+                    </h4>
+                    <!-- <a target="_blank" href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
+                            <a target="_blank" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                            <a target="_blank" href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a> -->
+
+
+                    <!-- <a href="#"><i class="fab fa-instagram " ></i></a> -->
+                </div>
+               
+                <br>
+                <div class="row">
+                    <div class="footer-col fc4">
+                        <div class="social-links">
+                            <!-- <h4 style="text-align: center;">follow us</h4> -->
+                            <a target="_blank" href="https://www.facebook.com/aniket.kshirsagar.771"><i class="fab fa-facebook-f"></i></a>
+                            <a target="_blank" href="https://twitter.com/AniketK22879640?t=uBwJ9K8f9V8RJqHhWKosnw&s=08"><i class="fab fa-twitch"></i></a>
+                            <a target="_blank" href="https://www.instagram.com/aniket_kshirsagar_21?r=nametag"><i class="fab fa-instagram"></i></a>
+                            <a target="_blank" href="https://in.linkedin.com/in/aniket-kshirsagar-94918b203"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+            crossorigin="anonymous"></script>
+
+        <script src="javascript.js"></script>
 </body>
 
 </html>
